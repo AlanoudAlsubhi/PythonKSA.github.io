@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Collection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="Salman Logo.png" alt="Logo" class="logo">
+    </a>
+  </header>
+
+    <a href="index.html" class="home-btn"> Home</a>
+
+    <!-- Section Title -->
+    <div class="banner">
+        Private Collection
+    </div>
+
+  <main class="collection">
+
+    <div class="gallery">
+      <div class="item">
+        <div class="slider">
+            <img src="Private_Snake01.jpg" class="active" alt="Snake 1">
+            <img src="images/snake1-2.jpg" alt="Snake 1 alternate">
+            <img src="images/snake1-3.jpg" alt="Snake 1 closeup">
+
+            <!-- navigation buttons -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        <p><strong>Genes:</strong> Pastel, Clown, Pied</p>
+      </div>
+
+      <div class="item">
+        <div class="slider">
+            <img src="Private_Snake01.jpg" class="active" alt="Snake 1">
+            <img src="images/snake1-2.jpg" alt="Snake 1 alternate">
+            <img src="images/snake1-3.jpg" alt="Snake 1 closeup">
+
+            <!-- navigation buttons -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        <p><strong>Genes:</strong> Pastel, Clown, Pied</p>
+      </div>
+
+      <div class="item">
+        <div class="slider">
+            <img src="Private_Snake01.jpg" class="active" alt="Snake 1">
+            <img src="images/snake1-2.jpg" alt="Snake 1 alternate">
+            <img src="images/snake1-3.jpg" alt="Snake 1 closeup">
+
+            <!-- navigation buttons -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        <p><strong>Genes:</strong> Pastel, Clown, Pied</p>
+      </div>
+      <!-- Continue until you have 16 snakes -->
+
+    </div>
+  </main>
+
+
+  <script>
+
+
+/* --- Java Script --- */
+const sliders = document.querySelectorAll('.slider');
+
+sliders.forEach(slider => {
+  const images = slider.querySelectorAll('img');
+  const prevBtn = slider.querySelector('.prev');
+  const nextBtn = slider.querySelector('.next');
+  let index = 0;
+
+  function showImage(i) {
+    images.forEach(img => img.classList.remove('active'));
+    images[i].classList.add('active');
+  }
+
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + images.length) % images.length;
+    showImage(index);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % images.length;
+    showImage(index);
+  });
+});
+</script>
+
+<footer class="footer">
+    <div class="footer-container">
+            <!-- Left Section -->
+        <div class="footer-left">
+            <h3>Ball Python KSA</h3>
+            <p>Follow us</p>
+            <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://wa.me/966505748595" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    
+            <!-- Right Section -->
+        <div class="footer-right">
+            <p><strong>Email us:</strong><br>Services@kyttabh.com</p>
+            <p><strong>Call us:</strong><br>+966505748595</p>
+            <div class="commerce-logo">
+                <img src="ministry-of-commerce-logo.png" alt="Ministry of Commerce Logo">
+            </div>
+            <p>1010940551 سجل تجاري</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

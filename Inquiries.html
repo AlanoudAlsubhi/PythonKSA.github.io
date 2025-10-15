@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquiries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="Salman Logo.png" alt="Logo" class="logo">
+    </a>
+  </header>
+
+  <a href="index.html" class="home-btn"> Home</a>
+
+      <!-- Section Title -->
+   <div class="banner">
+        Inquiries
+   </div>
+
+  <main class="inquiry-page">
+
+<form action="https://formsubmit.co/alanoud.alsubhi@gmail.com" method="POST" class="inquiry-form">
+  <!-- hidden options -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="thank-you.html">
+  
+  <label for="type">Type:</label>
+  <select id="type" name="type" required>
+    <option value="">Select type</option>
+    <option value="import">Import</option>
+    <option value="others">Others</option>
+  </select>
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description" rows="4" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+
+<footer class="footer">
+    <div class="footer-container">
+            <!-- Left Section -->
+        <div class="footer-left">
+            <h3>Ball Python KSA</h3>
+            <p>Follow us</p>
+            <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://wa.me/966505748595" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    
+            <!-- Right Section -->
+        <div class="footer-right">
+            <p><strong>Email us:</strong><br>Services@kyttabh.com</p>
+            <p><strong>Call us:</strong><br>+966505748595</p>
+            <div class="commerce-logo">
+                <img src="ministry-of-commerce-logo.png" alt="Ministry of Commerce Logo">
+            </div>
+            <p>1010940551 سجل تجاري</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
