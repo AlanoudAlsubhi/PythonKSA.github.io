@@ -96,7 +96,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
     background-color: rgba(231, 191, 123, 0.8); /* 0.8 = 80% opacity */; /* Light background color */
     color: #000000; /* Dark text color */
     font-family: Arial, sans-serif;
@@ -328,7 +328,7 @@ main {
 }
 
 .inquiry-form label {
-  text-align: left;
+  text-align: right;
   font-weight: bold;
   color: #444;
 }

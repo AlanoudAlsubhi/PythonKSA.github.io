@@ -97,29 +97,15 @@ sliders.forEach(slider => {
 });
 </script>
 
-<footer class="footer">
-    <div class="footer-container">
-            <!-- Left Section -->
-        <div class="footer-left">
-            <h3>Ball Python KSA</h3>
-            <p>Follow us</p>
-            <div class="social-icons">
-                    <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-                    <a href="https://wa.me/966540642588" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
-            </div>
-        </div>
-    
-            <!-- Right Section -->
-        <div class="footer-right">
-            <p><strong>Email us:</strong><br>Services@kyttabh.com</p>
-            <p><strong>Call us:</strong><br>+966540642588</p>
-            <div class="commerce-logo">
-                <img src="ministry-of-commerce-logo.png" alt="Ministry of Commerce Logo">
-            </div>
-            <p>1010940551 سجل تجاري</p>
-        </div>
-    </div>
-</footer>
+    <div id="footer"></div>
+    <script>
+    // Load shared footer
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("footer").innerHTML = data;
+        });
+    </script>
 
 </body>
 </html>
